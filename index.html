@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TecnoMundo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header con patrón SVG translúcido -->
+  <header class="site-header" role="banner">
+    <div class="hero-pattern" aria-hidden="true">
+      <svg viewBox="0 0 1200 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#7b61ff" stop-opacity="0.16"/>
+            <stop offset="1" stop-color="#00d084" stop-opacity="0.08"/>
+          </linearGradient>
+          <pattern id="p" width="160" height="72" patternUnits="userSpaceOnUse">
+            <rect width="160" height="72" fill="url(#g)"/>
+            <path d="M0 36 L36 0 L72 36 L36 72 Z" fill="rgba(255,255,255,0.02)"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#p)"/>
+      </svg>
+    </div>
+  <!-- Navegación -->
+    <div class="brand">TecnoMundo</div>
+    <nav>
+      <a href="#hero">Inicio</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#destacados">Destacados</a>
+      <a href="#avances">Avances</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección Hero con video de fondo -->
+  <section id="hero" class="hero hero-video">
+    <!-- Si no colocas videos/, el poster se mostrará -->
+    <video class="hero-video-el" autoplay muted loop playsinline poster="img/hero-poster.png">
+      <source src="videos/hero-loop.webm" type="video/webm">
+      <source src="videos/hero-loop.mp4" type="video/mp4">
+      <!-- Si no hay video, el poster se mantiene -->
+    </video>
+
+    <div class="hero-overlay"></div>
+  <!-- Contenido Hero -->
+    <div class="hero-inner">
+      <h1>Explora el futuro de la tecnología</h1>
+      <p class="lead">Noticias, gadgets y avances científicos con estilo y claridad.</p>
+      <button class="btn primary" data-scroll="#noticias">Ver Noticias</button>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section id="noticias" class="section">
+    <div class="container">
+      <h2>Últimas Noticias</h2>
+      <div class="tarjetas">
+        <article class="tarjeta hidden">
+          <img src="img/apple-m5.jpg" alt="Chip Apple" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>Apple lanza su nuevo chip M5 optimizado para IA</h3>
+            <p>Apple anuncia el M5 con foco en rendimiento para cargas de IA y eficiencia energética en portátiles y dispositivos integrados.</p>
+            <a href="https://www.apple.com/newsroom/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon/" target="_blank" rel="noopener">Leer más</a>
+          </div>
+        </article>
+        <!-- Repetir estructura para más noticias -->
+        <article class="tarjeta hidden">
+          <img src="img/auto-tesla.jpg" alt="Tesla autónomo" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>Tesla acelera hacia vehículos sin volante</h3>
+            <p>Tesla continúa desarrollando modelos orientados a la autonomía completa con conceptos que prescinden de pedales y volante.</p>
+            <a href="https://www.techinasia.com/news/tesla-to-produce-ev-without-pedals-in-april-2026" target="_blank" rel="noopener">Leer más</a>
+          </div>
+        </article>
+        
+        <article class="tarjeta hidden">
+          <img src="img/red-6g.jpg" alt="Redes 6G" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>6G: la próxima generación que promete baja latencia extrema</h3>
+            <p>Investigación y pruebas tempranas de 6G apuntan a transformaciones en medicina remota y automoción conectada.</p>
+            <a href="https://www.xatakamovil.com/nuevo/6g-toda-informacion" target="_blank" rel="noopener">Leer más</a>
+          </div>
+        </article>
+
+        <article class="tarjeta hidden">
+          <img src="img/celulares.jpg" alt="Nuevos smartphones" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>Nuevos smartphones modelos destacados Nov 2025</h3>
+            <p>Una oleada de lanzamientos trae mejoras en cámaras, carga rápida y pantallas adaptativas en gamas altas y medias.</p>
+            <a href="https://www.celuinfo.com/blog-moviles/noticias/nuevos-telefonos-noviembre-2025-potencia-camaras-y-diseno-premium" target="_blank" rel="noopener">Leer más</a>
+          </div>
+        </article>
+
+        <article class="tarjeta hidden">
+          <img src="img/geforce-now.webp" alt="Geforce Now" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>Geforce Now arranca noviembre con 23 juegos en la nube</h3>
+            <p>La plataforma ofrece una amplia variedad de géneros y acceso en streaming desde múltiples dispositivos.</p>
+            <a href="https://www.geeknetic.es/Noticia/36476/GeForce-Now-arranca-noviembre-con-23-juegos-en-la-nube-con-Virtua-Fighter-5-Europa-Universalis-V-y-el-estreno-de-Call-of-Duty-Black-Ops-7.html" target="_blank" rel="noopener">Leer más</a>
+          </div>
+        </article>
+
+        <article class="tarjeta hidden">
+          <img src="img/Microsoft.png" alt="Fin soporte Windows 11" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>Microsoft confirma el fin del soporte para Windows 11 23H2</h3>
+            <p>Los equipos con esta versión dejarán de recibir actualizaciones de seguridad a partir de la fecha indicada.</p>
+            <a href="https://www.enter.co/chips-bits/microsoft-confirma-el-fin-del-soporte-para-windows-11-23h2-actualiza-antes-del-11-de-noviembre-de-2025/" target="_blank" rel="noopener">Leer más</a>
+          </div>
+        </article>
+
+        <article class="tarjeta hidden">
+          <img src="img/trabajosia.webp" alt="IA conversando" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>Trabajos amenazados por la IA</h3>
+            <p>Un estudio de Microsoft identificó los trabajos más amenazados por el ascenso de la IA, así como las profesiones más seguras.</p>
+            <a href="https://es.digitaltrends.com/tendencias/estudio-muy-serio-de-microsoft-los-trabajos-que-desapareceran-y-no-con-la-ia/" target="_blank" rel="noopener noreferrer">Leer más</a>
+          </div>
+        </article>
+
+        <article class="tarjeta hidden">
+          <img src="img/samsung-s26.webp" alt="Samsung S26" loading="lazy">
+          <div class="tarjeta-body">
+            <h3>Samsung y su nuevo chip Exynos 2600</h3>
+            <p>Se espera que traiga mejoras muy importantes en las capacidades de procesamiento de imagen (ISP) para cámara.</p>
+            <a href="https://andro4all.com/samsung-galaxy-s/samsung-promete-un-galaxy-s26-revolucionario-mas-ia-nuevo-chip-y-camaras-que-marcaran-tendencia" target="_blank" rel="noopener">Leer más</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destacados -->
+  <section id="destacados" class="section section-accent">
+    <div class="container">
+      <h2>Destacados</h2>
+
+      <!-- Catálogo: miniaturas cuadradas -->
+      <div class="catalog">
+        <article class="catalog-item">
+          <img src="img/dream-aqua.webp" alt="Dreame Aqua10" loading="lazy">
+          <div class="catalog-body">
+            <strong>Dreame Aqua10 Ultra</strong>
+            <p>Robot aspirador-fregador con estación de autolimpieza y 30.000 Pa</p>
+          </div>
+        </article>
+      <!-- Repetir estructura para más destacados -->
+        <article class="catalog-item">
+          <img src="img/neo-robot.avif" alt="NEO robot" loading="lazy">
+          <div class="catalog-body">
+            <strong>NEO Humanoide</strong>
+            <p>Robot doméstico con IA conversacional y capacidades de manipulación</p>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <img src="img/iphone.webp" alt="Batería EcoCharge" loading="lazy">
+          <div class="catalog-body">
+            <strong>Iphones Satelitales</strong>
+            <p>Apple planea añadir funciones que usarán conectividad vía satélite en futuros iPhones</p>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <img src ="img/gta6.jpeg" alt="GTA 6" loading="lazy">
+          <div class="catalog-body">
+            <strong>GTA 6</strong>
+            <p>Un nuevo retraso aleja otros seis meses más el lanzamiento de ‘GTA VI’</p>
+          </div>
+        </article>
+      </div>
+
+      
+
+  <!-- Avances científicos -->
+  <section id="avances" class="section">
+    <div class="container">
+      <h2>Avances Científicos</h2>
+    <!-- Artículos en cuadrícula -->
+      <div class="avances-grid">
+        <article class="mini-article">
+          <img src="img/ia-medicina.webp" alt="IA en medicina" loading="lazy">
+          <div>
+            <h3>IA aplicada a la medicina personalizada</h3>
+            <p>Modelos que analizan datos genómicos y clínicos para terapias a medida y acelerar descubrimiento de fármacos.</p>
+          </div>
+        </article>
+
+        <article class="mini-article">
+          <img src="img/sensor-cuantico.jpg" alt="Sensor cuántico" loading="lazy">
+          <div>
+            <h3>Sensores cuánticos para diagnóstico</h3>
+            <p>Sensores con sensibilidad superior para detectar firmas moleculares y diagnósticos más tempranos.</p>
+          </div>
+        </article>
+
+        <article class="mini-article">
+          <img src="img/robot-extremo.jpg" alt="Robótica en entornos extremos" loading="lazy">
+          <div>
+            <h3>Robótica en entornos extremos</h3>
+            <p>Robots para exploración submarina, minería y rescates, con sensores robustos e IA integrada.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Infografía SVG simple -->
+      <div class="infographic">
+        <svg viewBox="0 0 800 180" class="infog" role="img" aria-label="Infografía sobre avances científicos">
+          <rect width="100%" height="100%" rx="12" fill="#051226"/>
+          <g fill="#8fbfff" font-family="sans-serif">
+            <text x="24" y="36" font-size="18" fill="#dff1ff">Cifras clave 2025</text>
+            <text x="24" y="76" font-size="28">+45% <tspan font-size="14">adopción IA en medicina</tspan></text>
+            <text x="24" y="116" font-size="28">≈2x <tspan font-size="14">sensibilidad en sensores cuánticos</tspan></text>
+            <text x="24" y="156" font-size="18">Robótica: despliegues en 3 sectores clave</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Datos curiosos -->
+      <div class="fact-grid">
+        <div class="fact">
+          <strong>Dato</strong>
+          <p>Los sensores cuánticos detectan firmas moleculares con orden de magnitud mayor que sensores clásicos.</p>
+        </div>
+        <div class="fact">
+          <strong>Dato</strong>
+          <p>Algunos robots humanoides de consumo admiten reservas en 2025; disponibilidad y precio varían por región.</p>
+        </div>
+        <div class="fact">
+          <strong>Dato</strong>
+          <p>La IA reduce tiempos de descubrimiento de fármacos al analizar grandes sets clínicos y genómicos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3ección de Contacto -->
+  <section id="contacto" class="section section-muted">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo" required>
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 TecnoMundo</p>
+  </footer>
+<!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
