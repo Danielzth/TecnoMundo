@@ -1,4 +1,5 @@
-TecnoMundo: La Landing Page del Futuro
+# 🚀 TecnoMundo: La Landing Page del Futuro
+
 
 ## 🌟 Descripción del Proyecto
 
@@ -11,7 +12,6 @@ Este proyecto fue desarrollado como una demostración de dominio de tecnologías
 Puedes acceder a la versión desplegada en GitHub Pages aquí:
 
 [**Acceder a TecnoMundo en Vivo**](https://danielzth.github.io/TecnoMundo/) 
-*(¡No olvides pegar tu enlace aquí!)*
 
 ## ✨ Características Destacadas
 
