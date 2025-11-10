@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Reset y tipografía */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter, 'Segoe UI', Roboto, sans-serif}
 html,body{height:100%}
@@ -296,9 +297,6 @@ h2::after{
 @media (max-width:1100px){ .tarjetas{grid-template-columns:repeat(3,1fr)} .avances-grid{grid-template-columns:1fr 1fr} .fact-grid{grid-template-columns:1fr 1fr} }
 @media (max-width:760px){ .tarjetas{grid-template-columns:repeat(2,1fr)} .catalog{grid-template-columns:1fr} }
 @media (max-width:420px){ .tarjetas{grid-template-columns:1fr} .site-header nav{display:none} .carousel{gap:10px} }
-
-/* --- Ajustes rápidos de tipografía y paneles --- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root { --ui-font: "Poppins", Inter, "Segoe UI", Roboto, sans-serif; }
 body { font-family: var(--ui-font); }
